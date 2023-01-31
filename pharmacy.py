@@ -9,6 +9,8 @@ for i in range(1, 100):
     response = requests.get(url)
     json_data = response.json()
     products = json_data['data']['products']
+
+    
     for i in range(20):
         name = products[i]['name']
         price = products[i]['mrpDecimal']
